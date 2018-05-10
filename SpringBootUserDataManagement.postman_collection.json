@@ -1,0 +1,207 @@
+{
+	"id": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+	"name": "SpringBootUserDataManagement",
+	"description": "",
+	"order": [
+		"0d3c515f-0ac1-7758-320e-d5e2c36c1ada",
+		"23e11a09-53cf-cf5b-a340-21213671c09b",
+		"21607a7f-ed0d-ea34-cbd3-11e97db020d3",
+		"8241d233-7a7e-e9ac-f456-276fe98c31e6",
+		"8acde7c0-0f70-4c25-de92-956963570010"
+	],
+	"folders": [],
+	"timestamp": 1496497680550,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0d3c515f-0ac1-7758-320e-d5e2c36c1ada",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496498278122,
+			"name": "getAllUser",
+			"description": "",
+			"collectionId": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+			"responses": []
+		},
+		{
+			"id": "21607a7f-ed0d-ea34-cbd3-11e97db020d3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496508464380,
+			"name": "updateUser",
+			"description": "",
+			"collectionId": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+			"responses": [],
+			"rawModeData": "{\n  \"id\":1,\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Developer\"\n}"
+		},
+		{
+			"id": "23e11a09-53cf-cf5b-a340-21213671c09b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496508359307,
+			"name": "addData",
+			"description": "",
+			"collectionId": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 999,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "5",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 03 Jun 2017 16:45:01 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Saved",
+					"language": "plainText",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Response",
+					"id": "e91544c2-3712-78ce-b16a-c393d44b8d18",
+					"request": {
+						"url": "http://localhost:8080/users",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Engineer\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Engineer\"\n}"
+		},
+		{
+			"id": "8241d233-7a7e-e9ac-f456-276fe98c31e6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+			"data": null,
+			"dataMode": "params",
+			"name": "getUserById",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496499964365,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8acde7c0-0f70-4c25-de92-956963570010",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/users/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "2c7c0a02-7330-c213-21d6-fb3b0af9236d",
+			"data": null,
+			"dataMode": "params",
+			"name": "deleteById",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496499396202,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
